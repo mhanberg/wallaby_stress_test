@@ -17,6 +17,7 @@ defmodule WallabyStressTestWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/another", PageController, :another
   end
 
   # Other scopes may use custom stacks.

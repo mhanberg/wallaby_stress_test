@@ -1,0 +1,50 @@
+<section class="phx-hero">
+  <h1>Another</h1>
+  <%= link "Home", to: Routes.page_path(@conn, :index) %>
+</section>
+
+
+<section class="phx-hero">
+  <form>
+    <label>Name
+      <input type="text" name="name1">
+    </label>
+    <label>Town
+      <select name="town1">
+        <option value="London"> London </option>
+        <option value="San Francisco"> San Francisco </option>
+        <option value="Melbourne"> Melbourne </option>
+      </select>
+    </label>
+    <label>Name
+      <input type="text" name="name2">
+    </label>
+    <label>Town
+      <select name="town2">
+        <option value="London"> London </option>
+        <option value="San Francisco"> San Francisco </option>
+        <option value="Melbourne"> Melbourne </option>
+      </select>
+    </label>
+    <label>Name
+      <input type="text" name="name3">
+    </label>
+    <label>Town
+      <select name="town3">
+        <option value="London"> London </option>
+        <option value="San Francisco"> San Francisco </option>
+        <option value="Melbourne"> Melbourne </option>
+      </select>
+    </label>
+    <label>Name
+      <input type="text" name="name4">
+    </label>
+    <label>Town
+      <select name="town4">
+        <option value="London"> London </option>
+        <option value="San Francisco"> San Francisco </option>
+        <option value="Melbourne"> Melbourne </option>
+      </select>
+    </label>
+  </form>
+</section>
