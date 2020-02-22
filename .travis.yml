@@ -1,0 +1,14 @@
+language: elixir
+
+elixir: '1.10.1'
+otp_release: '22.2.7'
+
+addons:
+  chrome: stable
+
+before_script:
+  - export CHROMEDRIVER_VERSION=`curl -s http://chromedriver.storage.googleapis.com/LATEST_RELEASE`
+  - curl -L -O "http://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
+  - unzip chromedriver_linux64.zip
+  - sudo chmod +x chromedriver
+  - sudo mv chromedriver /usr/local/bin
